@@ -17,6 +17,9 @@
       img {
         width: 80%;
         margin-top: 25px;
+        /* transition: all .8s; */
+        /* transform: scale(1.3); */
+        /* transform: translate(100px, 100px) scale(0.3) rotate(45deg); 顺序有关系 先 移动后缩放 */
       }
     </style>
   </head>
@@ -26,9 +29,9 @@
   <script>
     const img = document.querySelector("img");
     img.src = `./img/img (${parseInt(Math.random() * 95) + 1}).jpg`;
-    setInterval(()=>{
+    setInterval(() => {
       img.src = `./img/img (${parseInt(Math.random() * 95) + 1}).jpg`;
-    },1000)
+    }, 3000);
     img.onclick = () => {
       img.src = `./img/img (${parseInt(Math.random() * 95) + 1}).jpg`;
     };
