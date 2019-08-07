@@ -11,30 +11,28 @@
         padding: 0;
       }
       body {
-        background: #FFF0F5;
+        background: #fff0f5;
         text-align: center;
       }
-      img{
+      img {
         width: 80%;
         margin-top: 25px;
-       
       }
     </style>
   </head>
   <body>
-    <img src="" alt="">
+    <img src="" alt="" />
     <!-- <div>你好</div> -->
   </body>
   <script>
     // const div = document.querySelector('div');
-    const img = document.querySelector('img');
-    console.log(img.style,`./img/img ${parseInt(Math.random() * 10)+1}.jpg`)
-    img.src = `./img/img ${parseInt(Math.random() * 10)+1}.jpg`
+    const img = document.querySelector("img");
+    img.src = `./img/img (${parseInt(Math.random() * 22) + 1}).jpg`;
 
     // const data = ['你真好你真是个大傻吊', '你真好', '大傻吊'];
     img.onclick = () => {
-      console.log(parseInt(Math.random() * 10)+1)
-      img.src = `./img/img ${parseInt(Math.random() * 10)+1}.jpg`
+      console.log(parseInt(Math.random() * 10) + 1);
+      img.src = `./img/img (${parseInt(Math.random() * 22) + 1}).jpg`;
     };
   </script>
 </html>
